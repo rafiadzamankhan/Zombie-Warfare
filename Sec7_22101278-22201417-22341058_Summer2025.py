@@ -29,7 +29,6 @@ current_level = 1
 player_speed_increment = 3
 enemy_speed_increment = 0.2
 
-
 god_mode_active = False
 god_mode_kills_remaining = 0
 god_mode_collisions_remaining = 0 
@@ -1035,4 +1034,5 @@ def main():
     glutMainLoop()
 
 if __name__ == "__main__":
+
     main()
