@@ -29,6 +29,7 @@ current_level = 1
 player_speed_increment = 3
 enemy_speed_increment = 0.2
 
+
 god_mode_active = False
 god_mode_kills_remaining = 0
 god_mode_collisions_remaining = 0 
@@ -43,6 +44,7 @@ pause_message = ""
 pause_message_timer = 0  
 level_up_message = "" 
 level_up_message_timer = 0  
+
 
 BUILDINGS_PER_SIDE = 10
 BUILDING_MIN_HEIGHT = 500
@@ -313,6 +315,7 @@ def draw_player():
         glutSolidCube(1.0)
         glPopMatrix()
 
+        
         # Body
         glColor3f(0.4, 0.0, 0.0)
         glPushMatrix()
@@ -728,7 +731,8 @@ def update_level():
         if current_level > 3:
             win = True
         print(f"Level Up! Current Level: {current_level}")
-    
+
+
 
 def Auto_Target_Mode_Activate():
     global player_angle, godmode_last_fire_time, game_score, LEVEL_SCORE
@@ -909,6 +913,7 @@ def update_camera():
         cam_z = camera_height
         camera_pos = (cam_x, cam_y, cam_z)    
 
+
 def setupCamera():
     glMatrixMode(GL_PROJECTION)
     glLoadIdentity()
@@ -929,6 +934,7 @@ def setupCamera():
         
     else:
         gluLookAt(x, y, z, player_pos[0], player_pos[1], player_pos[2], 0, 0, 1)
+
 
 def idle():
     global win, paused
@@ -1010,6 +1016,7 @@ def showScreen():
             
     glutSwapBuffers()
 
+
 def main():
     glutInit()
     glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB | GLUT_DEPTH)
@@ -1033,5 +1040,6 @@ def main():
 if __name__ == "__main__":
 
     main()
+
 
 
