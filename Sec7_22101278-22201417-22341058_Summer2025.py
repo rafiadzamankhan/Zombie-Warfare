@@ -128,8 +128,6 @@ def draw_pillars():
         glutSolidCube(1.0)
         glPopMatrix()
 
-
-
 def generate_buildings_continuous():
     global BUILDING_POSITIONS
     BUILDING_POSITIONS = []
@@ -831,7 +829,7 @@ def keyboardListener(key, x, y):
                     auto_target_mode = not auto_target_mode
                     auto_message_text = "Auto Target Mode Activated!"
                 else:
-                    auto_message_text = "Auto Target Mode Requires 10+ Score"
+                    auto_message_text = "Can't be activated. Auto Target Mode Requires 10+ Score"
                 auto_message_timer = 180
         
         if key == b'r':
@@ -1036,3 +1034,4 @@ def main():
 if __name__ == "__main__":
 
     main()
+
