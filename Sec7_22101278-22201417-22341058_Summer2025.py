@@ -65,7 +65,6 @@ PILLAR_POSITIONS = [
     ( GRID_LENGTH - 500,  GRID_LENGTH - 500, "ammo")     
 ]
 
-
 godmode_last_fire_time = 0
 godmode_rotation_speed = 1
 godmode_fire_interval = 0.25
@@ -1034,4 +1033,5 @@ def main():
 if __name__ == "__main__":
 
     main()
+
 
